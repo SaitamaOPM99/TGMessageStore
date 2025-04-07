@@ -14,7 +14,7 @@ import (
 var Commands map[string]string = map[string]string{
 	"START": `
 <i>👋 Hi <b>{mention}</b>,  I work for <b>@AnimeXSaga</b>! To access all our exclusive content, you <b>must</b> join 🚨 our backup channel — it's where the magic continues! 🌟
-<b>Learn</b> how to use me 👉 /help to easily <b>share</b> content with anyone 👣 </i>
+
 `,
 	"ABOUT": `
 ○ <b>Language</b>: <a href='https://go.dev'>GO</a>
