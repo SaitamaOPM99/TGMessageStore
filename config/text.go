@@ -13,14 +13,13 @@ import (
 // Standard command replies. Add a new entry to create new command no extra configs needed.
 var Commands map[string]string = map[string]string{
 	"START": `
-<i>👋 Hi <b>{mention}</b>,  I work for <b>@AnimeXSaga</b>! To access all our exclusive content, you <b>must</b> join 🚨 our backup channel !
-
+<i>👋 Hi <b>{mention}</b> I'm a bot that can create <b>links</b> to <b>store</b> your <b>files and messages</b> in a single click 🔗
 <b>Learn</b> how to use me 👉 /help to easily <b>share</b> content with anyone 👣 </i>
 `,
 	"ABOUT": `
 ○ <b>Language</b>: <a href='https://go.dev'>GO</a>
-○ <b>Support</b>: <a href='https://t.me/AnimeXSaga'>@AnimeXSaga</a>
-○ <b>Owner</b>: <a href='https://t.me/MalluSaitama'>@MalluSaitama</a>
+○ <b>Library</b>: <a href='https://github.com/PaulSonOfLars/gotgbot'>GoTgbot</a>
+○ <b>Support</b>: <a href='https://t.me/FractalProjects'>@Fractal</a>
 	`,
 
 	"HELP": `
@@ -91,6 +90,16 @@ var (
 	// Force Sub Messsage
 	FsubMessage = `<i><b>👋 Hᴇʏ ᴛʜᴇʀᴇ {mention},</b></i>
 Pʟᴇᴀsᴇ <b>ᴊᴏɪɴ</b> ᴍʏ <b>ᴄʜᴀɴɴᴇʟs</b> ᴜsɪɴɢ ᴛʜᴇ ʟɪɴᴋs ʙᴇʟᴏᴡ ᴛᴏ ᴀᴄᴄᴇss ᴛʜɪs ᴄᴏɴᴛᴇɴᴛ 👇
+`
+	// Batch Log message
+	BatchLogMessage = `📄 <b>New Batch Created by <tg-spoiler>{mention}</tg-spoiler></b>
+<i>
+<b>Channel Name</b>: <code>{channel_name}</code>
+<b>Channel ID</b>: <code>{channel_id}</code>
+<b>Batch Size</b>: <code>{size}</code>
+<b>Start</b>: <code>{start_id}</code>
+<b>End</b>: <code>{end_id}</code>
+</i>
 `
 )
 
