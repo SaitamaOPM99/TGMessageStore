@@ -75,8 +75,7 @@ var (
 	// fetching batch messages
 	StartGetBatch = "<i><b>Fetching your content...</b></i>"
 	// Force Sub Messsage
-	FsubMessage = `<i><b>👋 Hᴇʏ ᴛʜᴇʀᴇ {mention},</b></i>
-Pʟᴇᴀsᴇ <b>ᴊᴏɪɴ</b> ᴍʏ <b>ᴄʜᴀɴɴᴇʟs</b> ᴜsɪɴɢ ᴛʜᴇ ʟɪɴᴋs ʙᴇʟᴏᴡ ᴛᴏ ᴀᴄᴄᴇss ᴛʜɪs ᴄᴏɴᴛᴇɴᴛ 👇
+	FsubMessage = `<b>👋 Hᴇʏ ᴛʜᴇʀᴇ, ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴛʜᴇ ᴛʀʏ ᴀɢᴀɪɴ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ғɪʟᴇs. </b>
 `
 	// Batch Log message
 	BatchLogMessage = `📄 <b>New Batch Created by <tg-spoiler>{mention}</tg-spoiler></b>
