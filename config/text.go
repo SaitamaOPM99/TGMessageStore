@@ -16,11 +16,14 @@ var Commands map[string]string = map[string]string{
 <b> Hello, I am a File Store Bot Powered by @AnimeXSaga </b> 👣
 `,
 	"ABOUT": `
-<i>😐 Sorry dude only an admin can do that !</i>
+○ <b>ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/SAGA_UPDATES'>SAGA_UPDATES</a></b>
+○ <b>ʟᴀɴɢᴜᴀɢᴇ : ɢᴏ</b>
+○ <b>ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/MalluSaitama'>@MalluSaitama</a></b>
+○ <b>ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴀᴋᴇ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ.</b>
 	`,
 
 	"HELP": `
- <i>😐 Sorry dude only an admin can do that !</i>
+<b>ᴄʟᴏsᴇᴅ 🔒</b>
 `,
 
 	"PRIVACY": `<i>This bot does not connect to any database and hence <b>does not store any user data</b> in any form.</i>`,
@@ -100,5 +103,6 @@ func GetCommand(command string) (string, [][]gotgbot.InlineKeyboardButton) {
 
 	return text, Buttons[command]
 }
+
 
 // GetCommandText returns only text for a command.
