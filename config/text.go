@@ -16,10 +16,11 @@ var Commands map[string]string = map[string]string{
 <b> Hello, I am a File Store Bot Powered by @AnimeXSaga </b> 👣
 `,
 	"ABOUT": `
-○ <b>ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/SAGA_UPDATES'>SAGA_UPDATES</a></b>
-○ <b>ʟᴀɴɢᴜᴀɢᴇ : ɢᴏ</b>
-○ <b>ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/MalluSaitama'>@MalluSaitama</a></b>
-○ <b>ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴀᴋᴇ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ.</b>
+○ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/SAGA_UPDATES'>SAGA_UPDATES</a>
+○ ʟᴀɴɢᴜᴀɢᴇ : ɢᴏ 
+○ ᴅᴇᴠᴇʟᴏᴘᴇʀ : @MalluSaitama
+○ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href='https://t.me/MalluSaitama'>File Store Bot</a>
+○ ɪɴғᴏ : ᴜsᴇ ᴏғғɪᴄɪᴀʟ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴘᴘ ᴛᴏ ɢᴇᴛ ғɪʟᴇs 
 	`,
 
 	"HELP": `
