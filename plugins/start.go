@@ -124,32 +124,32 @@ func sendBatch(bot *gotgbot.Bot, toChatID, fromChatID, startID, endID int64, fro
 		autodelete.InsertAutodel(autodelete.AutodelData{ChatID: toChatID, MessageID: m.MessageId})
 	}
 
-	// ✅ Forward sticker and footer after batch
-	const fixedChannelID int64 = -1002483939004
-	const stickerMsgID int64 = 6
-	const footerMsgID int64 = 7
+// ✅ Forward sticker and footer after batch
+  const fixedChannelID int64 = -1002276723360
+  const stickerMsgID int64 = 7
+  const footerMsgID int64 = 8
 
-		sticker, err := bot.CopyMessage(toChatID, fixedChannelID, stickerMsgID, &gotgbot.CopyMessageOpts{
-		ProtectContent:      config.ProtectContent,
-		DisableNotification: config.DisableNotification,
-	})
-	if err == nil {
-		autodelete.InsertAutodel(autodelete.AutodelData{ChatID: toChatID, MessageID: sticker.MessageId})
-	} else {
-		fmt.Printf("sendBatch: failed to copy sticker: %v\n", err)
-	}
+    sticker, err := bot.CopyMessage(toChatID, fixedChannelID, stickerMsgID, &gotgbot.CopyMessageOpts{
+    ProtectContent:      config.ProtectContent,
+    DisableNotification: config.DisableNotification,
+  })
+  if err == nil {
+    autodelete.InsertAutodel(autodelete.AutodelData{ChatID: toChatID, MessageID: sticker.MessageId})
+  } else {
+    fmt.Printf("sendBatch: failed to copy sticker: %v\n", err)
+  }
 
-	footer, err := bot.CopyMessage(toChatID, fixedChannelID, footerMsgID, &gotgbot.CopyMessageOpts{
-		ProtectContent:      config.ProtectContent,
-		DisableNotification: config.DisableNotification,
-	})
-	if err == nil {
-		autodelete.InsertAutodel(autodelete.AutodelData{ChatID: toChatID, MessageID: footer.MessageId})
-	} else {
-		fmt.Printf("sendBatch: failed to copy footer: %v\n", err)
-	}
+  footer, err := bot.CopyMessage(toChatID, fixedChannelID, footerMsgID, &gotgbot.CopyMessageOpts{
+    ProtectContent:      config.ProtectContent,
+    DisableNotification: config.DisableNotification,
+  })
+  if err == nil {
+    autodelete.InsertAutodel(autodelete.AutodelData{ChatID: toChatID, MessageID: footer.MessageId})
+  } else {
+    fmt.Printf("sendBatch: failed to copy footer: %v\n", err)
+  }
 
-	statMessage.Delete(bot, &gotgbot.DeleteMessageOpts{})
+  statMessage.Delete(bot, &gotgbot.DeleteMessageOpts{})
 }
 
 // isMember checks if a usr is a member of a chat.
