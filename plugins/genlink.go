@@ -55,7 +55,7 @@ func GenLink(bot *gotgbot.Bot, ctx *ext.Context) error {
 		// Try to access the chat
 		chatID, err = strconv.ParseInt(chatString, 10, 64)
 		if err != nil {
-			chatID, err = helpers.IDFromUsername(bot, chatString)
+			chatID, _, err = helpers.IDFromUsername(bot, chatString)
 			if err != nil {
 				update.Reply(bot, config.BatchUnknownChat, &gotgbot.SendMessageOpts{ParseMode: gotgbot.ParseModeHTML})
 				return nil
