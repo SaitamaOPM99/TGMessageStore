@@ -16,7 +16,7 @@ var Commands map[string]string = map[string]string{
 <b> Hello, I am a File Store Bot Powered by @AnimeXSaga ⛩️ </b> 
 `,
 	"ABOUT": `
-○ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ : @UpSaga
+○ ᴄʜᴀɴɴᴇʟ : @UpSaga
 ○ ʟᴀɴɢᴜᴀɢᴇ : Python3 
 ○ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/MalluSaitama'>Owner</a>
 ○ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href='https://t.me/MalluSaitama'>File Store Bot</a>
