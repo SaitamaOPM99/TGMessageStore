@@ -16,9 +16,9 @@ var Commands map[string]string = map[string]string{
 <b> Hello, I am a File Store Bot Powered by @AnimeXSaga ⛩️ </b> 
 `,
 	"ABOUT": `
-○ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/SAGA_UPDATES'>SAGA_UPDATES</a>
+○ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ : @UpSaga
 ○ ʟᴀɴɢᴜᴀɢᴇ : Python3 
-○ ᴅᴇᴠᴇʟᴏᴘᴇʀ : @MalluSaitama
+○ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/MalluSaitama'>Owner</a>
 ○ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href='https://t.me/MalluSaitama'>File Store Bot</a>
 ○ ɪɴғᴏ : ᴜsᴇ ᴏғғɪᴄɪᴀʟ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴘᴘ ᴛᴏ ɢᴇᴛ ғɪʟᴇs 
 	`,
