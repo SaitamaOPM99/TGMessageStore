@@ -59,7 +59,7 @@ func BasicFormat(format string, user *gotgbot.User, extraParams ...map[string]an
 
 	var mention string
 	if user.Username != "" {
-		mention = "@" + user.Username
+		mention = user.Username
 	} else {
 		mention = fmt.Sprintf("<a href='tg://user?id=%d'>%s</a>", user.Id, name)
 	}
