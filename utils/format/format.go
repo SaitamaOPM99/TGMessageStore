@@ -86,8 +86,7 @@ func FullName(user *gotgbot.User) string {
 	return user.FirstName
 }
 
-// Mention creates an HTML string that mentions the user (clickable name).
 func Mention(user *gotgbot.User) string {
-	name := html.EscapeString(FullName(user)) // escape to avoid HTML issues
-	return fmt.Sprintf("<a href='tg://user?id=%d'>%s</a>", user.Id, name)
+	name := html.EscapeString(FullName(user))
+	return fmt.Sprintf("<a href=\"tg://openmessage?user_id=%d\">%s</a>", user.Id, name)
 }
