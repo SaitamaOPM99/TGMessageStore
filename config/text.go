@@ -6,8 +6,7 @@ package config
 
 import (
 	"strings"
-        "fmt"
-	"html"
+   
 
 	"github.com/PaulSonOfLars/gotgbot/v2"
 )
