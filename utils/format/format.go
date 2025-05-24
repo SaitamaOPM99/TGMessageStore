@@ -7,7 +7,6 @@ package format
 import (
 	"fmt"
 	"strings"
-        "html"
 
 	"github.com/Jisin0/TGMessageStore/utils/helpers"
 	"github.com/PaulSonOfLars/gotgbot/v2"
