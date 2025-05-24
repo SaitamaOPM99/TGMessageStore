@@ -91,7 +91,7 @@ func FullName(user *gotgbot.User) (s string) {
 // Mention creates a html string that mentions the user.
 func Mention(user *gotgbot.User) (s string) {
   if user.Username != "" {
-    s =  user.Username
+    s =  "@" + user.Username
   } else {
     s = fmt.Sprintf("<a href='tg://user?id=%d'>%s</a>", user.Id, FullName(user))
   }
