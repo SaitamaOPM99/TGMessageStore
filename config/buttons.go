@@ -14,7 +14,7 @@ var Buttons map[string][][]gotgbot.InlineKeyboardButton = map[string][][]gotgbot
 
 // Single buttons used to build composite markups.
 var (
-	aboutButton = gotgbot.InlineKeyboardButton{Text: "ℹ️ About Me", CallbackData: "cmd_ABOUT"}
+	aboutButton = gotgbot.InlineKeyboardButton{Text: "⚡ About Me", CallbackData: "cmd_ABOUT"}
 	helpButton  = gotgbot.InlineKeyboardButton{Text: "🔒 Close", CallbackData: "cmd_HELP"}
 	homeButton  = gotgbot.InlineKeyboardButton{Text: "⬅️ Bᴀᴄᴋ", CallbackData: "cmd_START"}
 )
