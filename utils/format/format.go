@@ -79,14 +79,23 @@ func BasicFormat(format string, user *gotgbot.User, extraParams ...map[string]an
 }
 
 // FullName returns the full name of a user.
-func FullName(user *gotgbot.User) string {
-	if user.LastName != "" {
-		return user.FirstName + " " + user.LastName
-	}
-	return user.FirstName
+func FullName(user *gotgbot.User) (s string) {
+  s = user.FirstName
+
+  if user.LastName != "" {
+    s = s + " " + user.LastName
+  }
+
+  return s
 }
 
-func Mention(user *gotgbot.User) string {
-	name := html.EscapeString(FullName(user))
-	return fmt.Sprintf("<a href=\"tg://openmessage?user_id=%d\">%s</a>", user.Id, name)
+// Mention creates a html string that mentions the user.
+func Mention(user *gotgbot.User) (s string) {
+  if user.Username != "" {
+    s = "@" + user.Username
+  } else {
+    s = fmt.Sprintf("<a href='tg://user?id=%d'>%s</a>", user.Id, FullName(user))
+  }
+
+  return s
 }
