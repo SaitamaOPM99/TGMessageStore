@@ -7,6 +7,7 @@ package format
 import (
 	"fmt"
 	"strings"
+        "html"
 
 	"github.com/Jisin0/TGMessageStore/utils/helpers"
 	"github.com/PaulSonOfLars/gotgbot/v2"
@@ -78,23 +79,15 @@ func BasicFormat(format string, user *gotgbot.User, extraParams ...map[string]an
 }
 
 // FullName returns the full name of a user.
-func FullName(user *gotgbot.User) (s string) {
-	s = user.FirstName
-
+func FullName(user *gotgbot.User) string {
 	if user.LastName != "" {
-		s = s + " " + user.LastName
+		return user.FirstName + " " + user.LastName
 	}
-
-	return s
+	return user.FirstName
 }
 
-// Mention creates a html string that mentions the user.
-func Mention(user *gotgbot.User) (s string) {
-	if user.Username != "" {
-		s = "@" + user.Username
-	} else {
-		s = fmt.Sprintf("<a href='tg://user?id=%d'>%s</a>", user.Id, FullName(user))
-	}
-
-	return s
+// Mention creates an HTML string that mentions the user (clickable name).
+func Mention(user *gotgbot.User) string {
+	name := html.EscapeString(FullName(user)) // escape to avoid HTML issues
+	return fmt.Sprintf("<a href='tg://user?id=%d'>%s</a>", user.Id, name)
 }
