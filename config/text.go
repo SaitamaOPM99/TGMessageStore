@@ -6,6 +6,8 @@ package config
 
 import (
 	"strings"
+        "fmt"
+	"html"
 
 	"github.com/PaulSonOfLars/gotgbot/v2"
 )
@@ -13,7 +15,7 @@ import (
 // Standard command replies. Add a new entry to create new command no extra configs needed.
 var Commands map[string]string = map[string]string{
 	"START": `
-<b> Hello {FullName},
+<b> Hello {mention},
 
 I can store files in Specified Channel and other users can access it from special link.
 
