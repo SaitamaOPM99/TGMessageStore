@@ -16,7 +16,6 @@ var Commands map[string]string = map[string]string{
 	"START": `
 <b> Hello <a href=https://t.me/{mention}>{name}</a>,
 
-
 I can store files in Specified Channel and other users can access it from special link.
 
 <blockquote> Check - @UpSaga ⛩️</blockquote></b> 
