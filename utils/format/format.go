@@ -59,7 +59,7 @@ func BasicFormat(format string, user *gotgbot.User, extraParams ...map[string]an
 
 	var mention string
 	if user.Username != "" {
-		mention = user.Username
+		mention = "@" + user.Username
 	} else {
 		mention = fmt.Sprintf("<a href='tg://user?id=%d'>%s</a>", user.Id, name)
 	}
@@ -79,24 +79,22 @@ func BasicFormat(format string, user *gotgbot.User, extraParams ...map[string]an
 
 // FullName returns the full name of a user.
 func FullName(user *gotgbot.User) (s string) {
-  s = user.FirstName
+	s = user.FirstName
 
-  if user.LastName != "" {
-    s = s + " " + user.LastName
-  }
+	if user.LastName != "" {
+		s = s + " " + user.LastName
+	}
 
-  return s
+	return s
 }
 
 // Mention creates a html string that mentions the user.
 func Mention(user *gotgbot.User) (s string) {
-  if user.Username != "" {
-    s =  "@" + user.Username
-  } else {
-    s = fmt.Sprintf("<a href='tg://user?id=%d'>%s</a>", user.Id, FullName(user))
-  }
+	if user.Username != "" {
+		s = "@" + user.Username
+	} else {
+		s = fmt.Sprintf("<a href='tg://user?id=%d'>%s</a>", user.Id, FullName(user))
+	}
 
-  return s
+	return s
 }
-
-
