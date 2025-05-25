@@ -14,7 +14,7 @@ import (
 // Standard command replies. Add a new entry to create new command no extra configs needed.
 var Commands map[string]string = map[string]string{
 	"START": `
-<b> Hello {Mention},
+<b> Hello <a href=tg://user?id="+str(user_id)>{name}</a>,
 
 I can store files in Specified Channel and other users can access it from special link.
 
